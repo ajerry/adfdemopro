@@ -1,0 +1,21 @@
+{
+	"name": "CovidDataSource",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "HTTPServerReferenceLinkedService",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation",
+				"relativeUrl": "06-29-2020.csv"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}

@@ -1,0 +1,21 @@
+{
+	"name": "CovidLatest",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ADLSLSReference",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileSystem": "labfile"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
