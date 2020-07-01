@@ -11,13 +11,25 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'accountKey' of 'ADLSLSReference'"
 		},
+		"AzureDataLakeStorage1_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'AzureDataLakeStorage1'"
+		},
 		"ADLSLSReference_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://pbi2cdm.dfs.core.windows.net"
+		},
+		"AzureDataLakeStorage1_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "https://pbi2cdm.dfs.core.windows.net"
 		},
 		"HTTPServerReferenceLinkedService_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_daily_reports/"
+		},
+		"OData1_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://ghoapi.azureedge.net/api"
 		},
 		"containerUri": {
 			"type": "string",
@@ -49,11 +61,20 @@
 					"ADLSLSReference_accountKey": {
 						"value": "[parameters('ADLSLSReference_accountKey')]"
 					},
+					"AzureDataLakeStorage1_accountKey": {
+						"value": "[parameters('AzureDataLakeStorage1_accountKey')]"
+					},
 					"ADLSLSReference_properties_typeProperties_url": {
 						"value": "[parameters('ADLSLSReference_properties_typeProperties_url')]"
 					},
+					"AzureDataLakeStorage1_properties_typeProperties_url": {
+						"value": "[parameters('AzureDataLakeStorage1_properties_typeProperties_url')]"
+					},
 					"HTTPServerReferenceLinkedService_properties_typeProperties_url": {
 						"value": "[parameters('HTTPServerReferenceLinkedService_properties_typeProperties_url')]"
+					},
+					"OData1_properties_typeProperties_url": {
+						"value": "[parameters('OData1_properties_typeProperties_url')]"
 					}
 				}
 			},

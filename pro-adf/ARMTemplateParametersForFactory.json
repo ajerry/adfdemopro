@@ -8,11 +8,20 @@
 		"ADLSLSReference_accountKey": {
 			"value": ""
 		},
+		"AzureDataLakeStorage1_accountKey": {
+			"value": ""
+		},
 		"ADLSLSReference_properties_typeProperties_url": {
+			"value": "https://pbi2cdm.dfs.core.windows.net"
+		},
+		"AzureDataLakeStorage1_properties_typeProperties_url": {
 			"value": "https://pbi2cdm.dfs.core.windows.net"
 		},
 		"HTTPServerReferenceLinkedService_properties_typeProperties_url": {
 			"value": "https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_daily_reports/"
+		},
+		"OData1_properties_typeProperties_url": {
+			"value": "https://ghoapi.azureedge.net/api"
 		}
 	}
 }
